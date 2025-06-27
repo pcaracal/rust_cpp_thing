@@ -1,6 +1,7 @@
 #![allow(clippy::missing_safety_doc)] // lol
 #![allow(clippy::missing_panics_doc)]
 
+pub mod mandelbrot;
 pub mod thing;
 
 use std::ffi::{CString, c_char};

@@ -1,3 +1,4 @@
+#include "mandelbrot_wrapper.h"
 #include "rust_stuff.h"
 #include <iostream>
 
@@ -25,6 +26,10 @@ int main() {
 
   thing_print(thing);
   destroy_thing(thing);
+
+  MandelbrotWrapper mandelbrot;
+  mandelbrot.generate(9000, 6000, 100);
+  mandelbrot.save("mandelbrot.png");
 
   return 0;
 }
